@@ -1,6 +1,5 @@
 
 import './App.css';
-
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -14,6 +13,8 @@ import DeletarTema from './components/temas/deletartema/DeletarTema';
 import ListaPostagens from './components/postagem/listapostagens/ListaPostagens';
 import FormularioPostagem from './components/postagem/formpostagem/FormularioPostagem';
 import DeletarPostagem from './components/postagem/deletarpostagem/DeletarPostagem';
+import Perfil from './pages/perfil/Perfil';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
               <Route path="/cadastroPostagem" element={<FormularioPostagem />} />
               <Route path="/editarPostagem/:id" element={<FormularioPostagem />} />
               <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
+              <Route path="/perfil" element={<Perfil />} />
             </Routes>
           </div>
           <Footer />
