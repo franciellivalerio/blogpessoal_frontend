@@ -35,7 +35,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
         try {
             await login(`/usuarios/logar`, userLogin, setUsuario)
              
-            ToastAlerta('Você precisa estar logado', 'info');
+            ToastAlerta('Usuário autenticado com sucesso', 'sucesso');
             
 
         } catch (error) {
