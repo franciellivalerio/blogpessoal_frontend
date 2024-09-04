@@ -4,7 +4,7 @@ import { AuthContext } from '../../../contexts/AuthContext';
 import Tema from '../../../models/Tema';
 import { atualizar, buscar, cadastrar } from '../../../services/Service';
 // importe o toastAlerta
-import { ToastAlerta } from '../../../utils/toastAlerta';
+import { ToastAlerta } from '../../../utils/ToastAlerta';
 
 function FormTema() {
   const [tema, setTema] = useState<Tema>({} as Tema);
